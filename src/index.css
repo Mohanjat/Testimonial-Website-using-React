@@ -1,13 +1,141 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(220, 220, 220);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.title{
+  font-weight: bold;
+}
+
+.set_line{
+  width: 9%;
+  border: 1.5px solid rgb(139, 92, 246);
+  background-color: rgb(139, 92, 246);
+  padding: 0.01rem;
+}
+
+.review{
+     display: flex;
+     flex-direction: column;
+     gap: 0.5rem;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto;
+     margin-top: 1.8rem;
+     width: 43%;
+     background-color: white;
+     padding: 1.5rem 3rem;
+     text-align: center;
+     border-radius: 4px;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+     position: relative;
+     min-height: 380px;
+}
+
+.image_section{
+  position: absolute;
+  z-index: 10;
+  top: -3.5rem;
+  left: 1rem;
+}
+
+.image{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  z-index: 25;
+}
+
+.image_bg{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: rgb(139, 92, 246);
+  position: absolute;
+  top: -4px;
+  z-index: -10;
+  left: 8px;
+}
+
+.review_info{
+  margin-top: 2rem;
+}
+
+.name{
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.job{
+  font-size: 0.81rem;
+  color: rgb(153, 132, 202);
+}
+
+.quote{
+  color: rgb(139, 92, 246);
+  font-size: small;
+}
+
+.quote_left{
+  margin-top: 0.61rem;
+}
+
+.description{
+  text-align: center;
+  margin-bottom: 0.6rem;
+  min-height:90px;
+}
+
+.text{
+  text-wrap: wrap;
+  
+}
+
+.icons{
+  color: rgb(139, 92, 246);
+  font-size: 1.4rem;
+  display: flex;
+  gap: 0.71rem;
+  margin-top: 0.81rem;
+  cursor: pointer;
+}
+
+.arrowBack:hover{
+  transform: scale(1.05);
+  color: rgb(93, 28, 245);
+  transition: all 0.2s;
+}
+.arrowForward:hover{
+  transform: scale(1.05);
+  color: rgb(93, 28, 245);
+  transition: all 0.2s;
+}
+
+.surprise_btn{
+  background-color: rgb(125, 76, 239);
+  color: white;
+  border: 1px solid transparent;
+  padding: 0.41rem 1.7rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.surprise_btn:hover{
+  background-color: rgb(105, 49, 234);
+  border: 1px solid rgb(192, 111, 111);
+  transition: all 0.2s;
 }
